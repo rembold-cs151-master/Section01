@@ -6,7 +6,6 @@ mountain and plant a flag at the top.
 """
 
 import karel
-import turns
 
 def climb_mountain():
     """Climbs a stair-step mountain of any size."""
