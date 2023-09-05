@@ -22,6 +22,7 @@
 <link href="ClimbMountain.css" rel="stylesheet" />
 <link href="ClimbEverest.css" rel="stylesheet" />
 <link href="ClimbMolehill.css" rel="stylesheet" />
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css" integrity="sha512-P9pgMgcSNlLb4Z2WAB2sH5KBKGnBfyJnq+bhcfLCFusrRc4XdXrhfDluBl/usq75NF5gTDIMcwI1GaG5gju+Mw==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
 </head>
 <body>
 <div class="reveal">
@@ -41,6 +42,8 @@
 </tr>
 </tbody>
 </table>
+<a title="Questions" class="pdflink" href="https://github.com/rembold-cs151-master/Section01/raw/main/Section01.pdf" style="position: absolute; right: 30px; top: 30px;"><i class="fa-solid fa-file-pdf"></i></a>
+<a title="Template Files" class="templatelink" href="https://github.com/rembold-cs151-master/Section01/" style="position: absolute; right: 100px; top:30px;"><i class="fa-solid fa-folder-tree"></i></a>
 </section>
 
 <section id="Problem 1" class="slide level2">
@@ -426,6 +429,7 @@ reached the ground.</li>
 <script src="js/karel.js"></script>
 <script src="js/kareltrace.js"></script>
 <script src="KarelSection.js"></script>
+<script src="https://kit.fontawesome.com/4bc05635b0.js" crossorigin="anonymous"></script>
 
 <script>
 
@@ -602,7 +606,9 @@ reached the ground.</li>
                   cursor: 'url(' + path + 'img/chalk-purple.png), auto' },
                 { color: 'rgba(255,231,146,0.5)',
                   cursor: 'url(' + path + 'img/chalk-yellow.png), auto '}
-            ]
+            ],
+            toggleChalkboardButton: false,
+            toggleNotesButton: false
         },
         dependencies: [
             {
