@@ -310,6 +310,7 @@ class ClimbFixedSizeMountainTrace extends KarelTrace {
         this.defineFunction("step_up", new StepUp());
         this.defineFunction("step_down", new StepDown());
         this.defineFunction("move_to_wall", new MoveToWall());
+        this.defineFunction("turn_left", new TurnLeft());
     }
 
     run() {
@@ -380,8 +381,7 @@ class ClimbFixedSizeMountain extends CTFunction {
 }
 
 ClimbFixedSizeMountain.HTML =
-    "<span class='keyword'>import</span> karel\n" +
-    "<span class='keyword'>import</span> turns\n\n" +
+    "<span class='keyword'>import</span> karel\n\n" +
     "<span class='keyword'>def</span> " +
          "climb<span class='u'>_</span>mountain():\n" +
     "    <span class='#1'>move<span class='u'>_</span>to" +
@@ -412,7 +412,9 @@ class StepUp extends CTFunction {
         let cf = ct.getCurrentFrame();
         await ct.traceStep("#1", ct.turnLeft);
         await ct.traceStep("#2", ct.move);
-        await ct.traceStep("#3", ct.turnRight);
+        await ct.traceStep("#3", async function() {
+                                        await ct.call("turn_right");
+                                    });
         await ct.traceStep("#4", ct.move);
     }
 
@@ -424,6 +426,31 @@ StepUp.HTML =
     "    <span class='#2'>move()</span>\n" +
     "    <span class='#3'>turn<span class='u'>_</span>right()</span>\n" +
     "    <span class='#4'>move()</span>\n";
+
+
+class TurnRight extends CTFunction {
+
+    constructor() {
+        super(TurnRight.HTML);
+    }
+
+    async run(ct) {
+        let world = ct._world;
+        let view = ct._view;
+        let karel = world.getKarel();
+        let cf = ct.getCurrentFrame();
+        await ct.traceStep("#1", ct.turnLeft);
+        await ct.traceStep("#2", ct.turnLeft);
+        await ct.traceStep("#3", ct.turnLeft);
+    }
+
+}
+
+TurnRight.HTML =
+    "<span class='keyword'>def</span> turn<span class='u'>_</span>right():\n" +
+    "    <span class='#1'>turn<span class='u'>_</span>left()</span>\n" +
+    "    <span class='#2'>turn<span class='u'>_</span>left()</span>\n" +
+    "    <span class='#3'>turn<span class='u'>_</span>left()</span>\n";
 
 
 class StepDown extends CTFunction {
@@ -438,7 +465,9 @@ class StepDown extends CTFunction {
         let karel = world.getKarel();
         let cf = ct.getCurrentFrame();
         await ct.traceStep("#1", ct.move);
-        await ct.traceStep("#2", ct.turnRight);
+        await ct.traceStep("#2", async function() {
+                                        await ct.call("turn_right");
+                                    });
         await ct.traceStep("#3", ct.move);
         await ct.traceStep("#4", ct.turnLeft);
     }
@@ -494,7 +523,7 @@ class ClimbMountainTrace extends KarelTrace {
     }
 
     setParameters() {
-        this.setMaxStackDepth(2);
+        this.setMaxStackDepth(3);
         this.setFrameHeight(ClimbMountainTrace.FRAME_HEIGHT);
         this.setFrameDeltas(ClimbMountainTrace.FRAME_DX,
                             ClimbMountainTrace.FRAME_DY);
@@ -506,6 +535,7 @@ class ClimbMountainTrace extends KarelTrace {
         this.defineFunction("step_up", new StepUp());
         this.defineFunction("drop_down", new DropDown());
         this.defineFunction("move_to_wall", new MoveToWall());
+        this.defineFunction("turn_right", new TurnRight());
     }
 
     run() {
@@ -537,7 +567,7 @@ class ClimbMountainTrace extends KarelTrace {
 
 }
 
-ClimbMountainTrace.FRAME_HEIGHT = 650;
+ClimbMountainTrace.FRAME_HEIGHT = 625;
 ClimbMountainTrace.FRAME_DX = 16;
 ClimbMountainTrace.FRAME_DY = 62;
 
@@ -576,8 +606,7 @@ class ClimbMountain extends CTFunction {
 
 ClimbMountain.HTML =
     "<span class='comment'># File: ClimbMountain.py</span>\n\n" +
-    "<span class='keyword'>import</span> karel\n" +
-    "<span class='keyword'>import</span> turns\n\n" +
+    "<span class='keyword'>import</span> karel\n\n" +
     "<span class='keyword'>def</span> " +
          "climb<span class='u'>_</span>mountain():\n" +
     "    <span class='#1'>move<span class='u'>_</span>to" +
@@ -607,7 +636,9 @@ class DropDown extends CTFunction {
         let view = ct._view;
         let karel = world.getKarel();
         let cf = ct.getCurrentFrame();
-        await ct.traceStep("#1", ct.turnRight);
+        await ct.traceStep("#1", async function() {
+                                        await ct.call("turn_right");
+                                    });
         await ct.traceStep("#2", ct.move);
         await ct.traceStep("#3", ct.turnLeft);
         if (await ct.traceStep("#4", ct.frontIsClear)) {
