@@ -1,0 +1,14 @@
+#ClimbEverest .CodeTrace {
+    width: 800px;
+    height: 800px;
+    margin-top: 3px;
+    font-size: 0.9em;
+}
+
+#ClimbEverestWorld {
+    width: 952px;
+    height: 535px;
+    padding: 6px;
+    padding-top: 8px;
+    /*background-color: white;*/
+}

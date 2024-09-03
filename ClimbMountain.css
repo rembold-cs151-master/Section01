@@ -1,0 +1,14 @@
+#ClimbMountain .CodeTrace {
+    width: 800px;
+    height: 800px;
+    margin-top: 3px;
+    font-size: 0.9em;
+}
+
+#ClimbMountainWorld {
+    width: 952px;
+    height: 565px;
+    padding: 6px;
+    padding-top: 8px;
+    /*background-color: white;*/
+}

@@ -1,0 +1,14 @@
+#Mystery .CodeTrace {
+    width: 800px;
+    height: 407px;
+    margin-top: 3px;
+    font-size: 0.9em;
+}
+
+#MysteryWorld {
+    width: 1000px;
+    height: 620px;
+    padding: 6px;
+    padding-top: 8px;
+    /*background-color: white;*/
+}

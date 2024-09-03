@@ -1,0 +1,21 @@
+\documentclass[tikz]{standalone}
+\usepackage{python-commands}
+\usepackage{monokai-colors}
+
+\begin{document}
+\begin{tikzpicture}
+    \karelgrid[MGreen]{11}{6}
+    \draw[MGreen, very thick] (2.5,0.5) --++(0,1) --++(1,0)
+        --++(0,1) --++(1,0)
+        --++(0,1) --++(1,0)
+        --++(0,1) --++(1,0)
+        --++(0,-1) --++(1,0)
+        --++(0,-1) --++(1,0)
+        --++(0,-1) --++(1,0)
+        --++(0,-1);
+    \karelmark[MYellow]{11}{1}{0}
+    \karelbeeper[MBlue]{6}{5}
+\end{tikzpicture}
+
+
+\end{document}

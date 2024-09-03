@@ -1,0 +1,14 @@
+#BuggyPutBeeperBorder .CodeTrace {
+    width: 800px;
+    height: 470px;
+    margin-top: 3px;
+    font-size: 0.9em;
+}
+
+#BuggyPutBeeperBorderWorld {
+    width: 1000px;
+    height: 620px;
+    padding: 6px;
+    padding-top: 8px;
+    /*background-color: white;*/
+}

@@ -110,9 +110,14 @@ $endif$
   // Code Tracing
   <script src="$revealjs-url$/../codetrace.js"></script>
 
+$for(extra_js)$
+  <script src="$revealjs-url$/../../js/$extra_js$.js"></script>
+$endfor$
+
 $for(tracejs)$
   <script src="$tracejs$Trace.js"></script>
 $endfor$
+
 
   <script>
 
