@@ -1,2 +1,2 @@
-# section_template
-A template file for generating slides and content for a section meeting
+# Section 01
+This repository contains the starting templates for activities from Section 01. 
