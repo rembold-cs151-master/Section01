@@ -32,7 +32,7 @@ content_url: https://github.com/rembold-cs151-master/Section01
 ## Problem 1
 - Consider the following Karel program:
 
-  ```mypython
+  ```{.mypython style='font-size:.8em'}
   import karel
 
   def mystery():
@@ -43,7 +43,7 @@ content_url: https://github.com/rembold-cs151-master/Section01
           turn_left()
   ```
 
-:::incremental
+:::{.incremental style='font-size:.8em'}
 - What does this program do in an empty world with Karel beginning facing east in the lower left corner?
 - What might be a better name for this function?
 - What would be a useful doc-string comment to describe this function?
