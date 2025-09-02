@@ -1,7 +1,7 @@
 ---
 title: "Section 1: Karel"
 author: Jed Rembold and Eric Roberts
-date: "Week of January 20"
+date: "Week of September 1st"
 slideNumber: true
 theme: monokai
 highlightjs-theme: monokai
@@ -47,7 +47,7 @@ content_url: https://github.com/rembold-cs151-master/Section01
 - What does this program do in an empty world with Karel beginning facing east in the lower left corner?
 - What might be a better name for this function?
 - What would be a useful doc-string comment to describe this function?
-- Can you use any functions you have already written or seen in class to help decompose this problem?
+- How could you further decompose this code into another meaningful function?
 :::
 
 
