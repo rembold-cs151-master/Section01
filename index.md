@@ -1,7 +1,7 @@
 ---
 title: "Section 1: Karel"
 author: Jed Rembold and Eric Roberts
-date: "Week of September 1st"
+date: "Week of January 19th"
 slideNumber: true
 theme: monokai
 highlightjs-theme: monokai
