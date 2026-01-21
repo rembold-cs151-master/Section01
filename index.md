@@ -71,19 +71,19 @@ content_url: https://github.com/rembold-cs151-master/Section01
 <td>
 <img id=MysteryRunButton
      class="CTButton"
-     src="images/RunControl.png"
+     src="images/Run.png"
      alt="RunButton" />
 </td>
 <td>
 <img id=MysteryStepInButton
      class="CTButton"
-     src="images/StepInControl.png"
+     src="images/StepIn.png"
      alt="StepInButton" />
 </td>
 <td>
 <img id=MysteryResetButton
      class="CTButton"
-     src="images/ResetControl.png"
+     src="images/Reset.png"
      alt="ResetButton" />
 </td>
 </tr>
@@ -122,25 +122,25 @@ content_url: https://github.com/rembold-cs151-master/Section01
 <td>
 <img id=BuggyPutBeeperBorderRunButton
      class="CTButton"
-     src="images/RunControl.png"
+     src="images/Run.png"
      alt="RunButton" />
 </td>
 <td>
 <img id=BuggyPutBeeperBorderStepInButton
      class="CTButton"
-     src="images/StepInControl.png"
+     src="images/StepIn.png"
      alt="StepInButton" />
 </td>
 <td>
 <img id=BuggyPutBeeperBorderStepOverButton
      class="CTButton"
-     src="images/StepOverControl.png"
+     src="images/StepOver.png"
      alt="StepOverButton" />
 </td>
 <td>
 <img id=BuggyPutBeeperBorderResetButton
      class="CTButton"
-     src="images/ResetControl.png"
+     src="images/Reset.png"
      alt="ResetButton" />
 </td>
 </tr>
@@ -180,25 +180,25 @@ content_url: https://github.com/rembold-cs151-master/Section01
 <td>
 <img id=PutBeeperBorderRunButton
      class="CTButton"
-     src="images/RunControl.png"
+     src="images/Run.png"
      alt="RunButton" />
 </td>
 <td>
 <img id=PutBeeperBorderStepInButton
      class="CTButton"
-     src="images/StepInControl.png"
+     src="images/StepIn.png"
      alt="StepInButton" />
 </td>
 <td>
 <img id=PutBeeperBorderStepOverButton
      class="CTButton"
-     src="images/StepOverControl.png"
+     src="images/StepOver.png"
      alt="StepOverButton" />
 </td>
 <td>
 <img id=PutBeeperBorderResetButton
      class="CTButton"
-     src="images/ResetControl.png"
+     src="images/Reset.png"
      alt="ResetButton" />
 </td>
 </tr>
@@ -248,25 +248,25 @@ content_url: https://github.com/rembold-cs151-master/Section01
 <td>
 <img id=ClimbMountainRunButton
      class="CTButton"
-     src="images/RunControl.png"
+     src="images/Run.png"
      alt="RunButton" />
 </td>
 <td>
 <img id=ClimbMountainStepInButton
      class="CTButton"
-     src="images/StepInControl.png"
+     src="images/StepIn.png"
      alt="StepInButton" />
 </td>
 <td>
 <img id=ClimbMountainStepOverButton
      class="CTButton"
-     src="images/StepOverControl.png"
+     src="images/StepOver.png"
      alt="StepInButton" />
 </td>
 <td>
 <img id=ClimbMountainResetButton
      class="CTButton"
-     src="images/ResetControl.png"
+     src="images/Reset.png"
      alt="ResetButton" />
 </td>
 </tr>
@@ -306,25 +306,25 @@ content_url: https://github.com/rembold-cs151-master/Section01
 <td>
 <img id=ClimbEverestRunButton
      class="CTButton"
-     src="images/RunControl.png"
+     src="images/Run.png"
      alt="RunButton" />
 </td>
 <td>
 <img id=ClimbEverestStepInButton
      class="CTButton"
-     src="images/StepInControl.png"
+     src="images/StepIn.png"
      alt="StepInButton" />
 </td>
 <td>
 <img id=ClimbEverestStepOverButton
      class="CTButton"
-     src="images/StepOverControl.png"
+     src="images/StepOver.png"
      alt="StepInButton" />
 </td>
 <td>
 <img id=ClimbEverestResetButton
      class="CTButton"
-     src="images/ResetControl.png"
+     src="images/Reset.png"
      alt="ResetButton" />
 </td>
 </tr>
