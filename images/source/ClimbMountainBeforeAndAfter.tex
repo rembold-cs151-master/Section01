@@ -1,11 +1,11 @@
 \documentclass[tikz]{standalone}
 \usepackage{python-commands}
-\usepackage{monokai-colors}
+\usepackage{catppuccin-colors}
 
 \begin{document}
 \begin{tikzpicture}
-    \karelgrid[MGreen]{11}{6}
-    \draw[MGreen, very thick] (2.5,0.5) --++(0,1) --++(1,0)
+    \karelgrid[Purple]{11}{6}
+    \draw[Purple, very thick] (2.5,0.5) --++(0,1) --++(1,0)
         --++(0,1) --++(1,0)
         --++(0,1) --++(1,0)
         --++(0,1) --++(1,0)
@@ -13,11 +13,11 @@
         --++(0,-1) --++(1,0)
         --++(0,-1) --++(1,0)
         --++(0,-1);
-    \karelmark[MYellow]{1}{1}{0}
+    \karelmark[Orange]{1}{1}{0}
 
     \begin{scope}[xshift=14cm]
-        \karelgrid[MGreen]{11}{6}
-        \draw[MGreen, very thick] (2.5,0.5) --++(0,1) --++(1,0)
+        \karelgrid[Purple]{11}{6}
+        \draw[Purple, very thick] (2.5,0.5) --++(0,1) --++(1,0)
             --++(0,1) --++(1,0)
             --++(0,1) --++(1,0)
             --++(0,1) --++(1,0)
@@ -25,8 +25,8 @@
             --++(0,-1) --++(1,0)
             --++(0,-1) --++(1,0)
             --++(0,-1);
-        \karelmark[MYellow]{11}{1}{0}
-        \karelbeeper[MBlue]{6}{5}
+        \karelmark[Orange]{11}{1}{0}
+        \karelbeeper[Blue]{6}{5}
     \end{scope}
 \end{tikzpicture}
 

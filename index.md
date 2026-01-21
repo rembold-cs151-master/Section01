@@ -3,8 +3,8 @@ title: "Section 1: Karel"
 author: Jed Rembold and Eric Roberts
 date: "Week of January 19th"
 slideNumber: true
-theme: monokai
-highlightjs-theme: monokai
+theme: python_catppuccin
+highlightjs-theme: catppuccin-mocha
 width: 1920
 height: 1080
 transition: fade
