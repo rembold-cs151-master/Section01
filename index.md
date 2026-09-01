@@ -1,7 +1,7 @@
 ---
 title: "Section 1: Karel"
 author: Jed Rembold and Eric Roberts
-date: "Week of January 19th"
+date: "Week of August 31st"
 slideNumber: true
 theme: python_catppuccin
 highlightjs-theme: catppuccin-mocha
